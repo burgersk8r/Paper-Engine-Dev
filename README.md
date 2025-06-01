@@ -1,5 +1,5 @@
 # Friday Night Funkin': Paper Engine
-A Psych Engine 0.7.3 fork focusing mostly on optimizing! Inspired by: [Codename Engine](https://github.com/CodenameCrew/CodenameEngine)
+A developer repo for the Psych Engine 0.7.3 fork "Paper Engine", this will be used incase I fuck anything up, the main repo will still be used and accept pull requests
 
 # Building The Engine
 
@@ -29,5 +29,5 @@ If you're on Mac or Linux, follow these steps here:
 
 * Once it's done compiling, the game will launch and now you can start modding!
 
-# Downloading The Engine
-[For now, you can download the latest version of the engine by clicking here (Must have a GitHub account)](https://github.com/paigefnf/FNF-Paper-Engine/actions)
+# Main Repo Engine
+[Paper Engine Repository](https://github.com/burgersk8r/FNF-Paper-Engine)
