@@ -1,4 +1,4 @@
-# Friday Night Funkin': Paper Engine
+# Friday Night Funkin': Paper Engine Dev Repository
 A developer repo for the Psych Engine 0.7.3 fork "Paper Engine", this will be used incase I fuck anything up, the main repo will still be used and accept pull requests
 
 # Building The Engine
@@ -29,5 +29,5 @@ If you're on Mac or Linux, follow these steps here:
 
 * Once it's done compiling, the game will launch and now you can start modding!
 
-# Main Repo Engine
+# Main Engines Repo
 [Paper Engine Repository](https://github.com/burgersk8r/FNF-Paper-Engine)
