@@ -8,7 +8,7 @@ class BackgroundGirls extends FlxSprite
 		super(x, y);
 
 		// BG fangirls dissuaded
-		frames = Paths.getSparrowAtlas('game/stages/week6/bgFreaks');
+		frames = Paths.getSparrowAtlas('pixelVariant/game/stages/school/bgFreaks');
 		antialiasing = false;
 		swapDanceType();
 

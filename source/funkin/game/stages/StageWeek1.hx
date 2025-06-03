@@ -11,25 +11,25 @@ class StageWeek1 extends BaseStage
 	var dadbattleFog:DadBattleFog;
 	override function create()
 	{
-		var bg:BGSprite = new BGSprite('game/stages/week1/stageback', -600, -200, 0.9, 0.9);
+		var bg:BGSprite = new BGSprite('game/stages/default/stageback', -600, -200, 0.9, 0.9);
 		add(bg);
 
-		var stageFront:BGSprite = new BGSprite('game/stages/week1/stagefront', -650, 600, 0.9, 0.9);
+		var stageFront:BGSprite = new BGSprite('game/stages/default/stagefront', -650, 600, 0.9, 0.9);
 		stageFront.setGraphicSize(Std.int(stageFront.width * 1.1));
 		stageFront.updateHitbox();
 		add(stageFront);
 		if(!ClientPrefs.data.lowQuality) {
-			var stageLight:BGSprite = new BGSprite('game/stages/week1/stage_light', -125, -100, 0.9, 0.9);
+			var stageLight:BGSprite = new BGSprite('game/stages/default/stage_light', -125, -100, 0.9, 0.9);
 			stageLight.setGraphicSize(Std.int(stageLight.width * 1.1));
 			stageLight.updateHitbox();
 			add(stageLight);
-			var stageLight:BGSprite = new BGSprite('game/stages/week1/stage_light', 1225, -100, 0.9, 0.9);
+			var stageLight:BGSprite = new BGSprite('game/stages/default/stage_light', 1225, -100, 0.9, 0.9);
 			stageLight.setGraphicSize(Std.int(stageLight.width * 1.1));
 			stageLight.updateHitbox();
 			stageLight.flipX = true;
 			add(stageLight);
 
-			var stageCurtains:BGSprite = new BGSprite('game/stages/week1/stagecurtains', -500, -300, 1.3, 1.3);
+			var stageCurtains:BGSprite = new BGSprite('game/stages/default/stagecurtains', -500, -300, 1.3, 1.3);
 			stageCurtains.setGraphicSize(Std.int(stageCurtains.width * 0.9));
 			stageCurtains.updateHitbox();
 			add(stageCurtains);
@@ -46,7 +46,7 @@ class StageWeek1 extends BaseStage
 				dadbattleBlack.visible = false;
 				add(dadbattleBlack);
 
-				dadbattleLight = new BGSprite('game/stages/week1/spotlight', 400, -400);
+				dadbattleLight = new BGSprite('game/stages/default/spotlight', 400, -400);
 				dadbattleLight.alpha = 0.375;
 				dadbattleLight.blend = ADD;
 				dadbattleLight.visible = false;

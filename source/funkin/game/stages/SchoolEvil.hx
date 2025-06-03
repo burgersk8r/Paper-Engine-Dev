@@ -34,8 +34,8 @@ class SchoolEvil extends BaseStage
 
 		// Background
 		var bg = !ClientPrefs.data.lowQuality
-			? new BGSprite('game/stages/week6/animatedEvilSchool', posX, posY, 0.8, 0.9, ['background 2'], true)
-			: new BGSprite('game/stages/week6/animatedEvilSchool_low', posX, posY, 0.8, 0.9);
+			? new BGSprite('pixelVariant/game/stages/school/animatedEvilSchool', posX, posY, 0.8, 0.9, ['background 2'], true)
+			: new BGSprite('pixelVariant/game/stages/school/animatedEvilSchool_low', posX, posY, 0.8, 0.9);
 
 		bg.scale.set(PlayState.daPixelZoom, PlayState.daPixelZoom);
 		bg.antialiasing = false;
@@ -66,7 +66,7 @@ class SchoolEvil extends BaseStage
 	{
 		if (event.event == "Trigger BG Ghouls" && !ClientPrefs.data.lowQuality)
 		{
-			bgGhouls = new BGSprite('game/stages/week6/bgGhouls', -100, 190, 0.9, 0.9, ['BG freaks glitch instance'], false);
+			bgGhouls = new BGSprite('pixelVariant/game/stages/school/bgGhouls', -100, 190, 0.9, 0.9, ['BG freaks glitch instance'], false);
 			bgGhouls.setGraphicSize(Std.int(bgGhouls.width * PlayState.daPixelZoom));
 			bgGhouls.updateHitbox();
 			bgGhouls.visible = false;
@@ -126,7 +126,7 @@ class SchoolEvil extends BaseStage
 
 		// Evil Senpai sprite setup
 		var senpaiEvil = new FlxSprite();
-		senpaiEvil.frames = Paths.getSparrowAtlas('game/stages/week6/senpaiCrazy');
+		senpaiEvil.frames = Paths.getSparrowAtlas('pixelVariant/game/stages/school/senpaiCrazy');
 		senpaiEvil.animation.addByPrefix('idle', 'Senpai Pre Explosion', 24, false);
 		senpaiEvil.setGraphicSize(Std.int(senpaiEvil.width * 6));
 		senpaiEvil.updateHitbox();
