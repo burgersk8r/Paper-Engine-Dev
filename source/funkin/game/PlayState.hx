@@ -633,16 +633,16 @@ class PlayState extends MusicBeatState
 
 		#if LUA_ALLOWED
 		for (notetype in noteTypes)
-			startLuasNamed('custom_notetypes/' + notetype + '.lua');
+			startLuasNamed('data/custom_notetypes/' + notetype + '.lua');
 		for (event in eventsPushed)
-			startLuasNamed('custom_events/' + event + '.lua');
+			startLuasNamed('data/custom_events/' + event + '.lua');
 		#end
 
 		#if HSCRIPT_ALLOWED
 		for (notetype in noteTypes)
-			startHScriptsNamed('custom_notetypes/' + notetype + '.hx');
+			startHScriptsNamed('data/custom_notetypes/' + notetype + '.hx');
 		for (event in eventsPushed)
-			startHScriptsNamed('custom_events/' + event + '.hx');
+			startHScriptsNamed('data/custom_events/' + event + '.hx');
 		#end
 		noteTypes = null;
 		eventsPushed = null;

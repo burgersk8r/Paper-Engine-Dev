@@ -183,7 +183,7 @@ class PhillyStreets extends BaseStage
 			if(!noteTypes.contains(note.noteType)) noteTypes.push(note.noteType);
 		}
 
-		spraycanPile = new BGSprite('game/stages/SpraycanPile', 920, 1045, 1, 1);
+		spraycanPile = new BGSprite('game/stages/phillyStreets/SpraycanPile', 920, 1045, 1, 1);
 		precache();
 		add(spraycanPile);
 		darkenable.push(spraycanPile);
@@ -458,7 +458,7 @@ class PhillyStreets extends BaseStage
 			if(didCreateCasing) return;
 			if(!ClientPrefs.data.lowQuality)
 			{
-				casingFrames = Paths.getSparrowAtlas('game/stages/weekend1/PicoBullet'); //precache
+				casingFrames = Paths.getSparrowAtlas('game/stages/phillyStreets/PicoBullet'); //precache
 				casingGroup = new FlxSpriteGroup();
 				add(casingGroup);
 			}
